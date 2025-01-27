@@ -58,7 +58,7 @@ WHERE lpep_dropoff_datetime >= '2019-10-01'
 GROUP BY trip_segment;
 ```
 #### Answer: 
-![alt text](<Screenshot 2025-01-27 at 17.53.15.png>)
+![alt text](<Question3.png>)
 
 ## Question 4
 ```bash
@@ -87,7 +87,7 @@ ORDER BY total_amount_sum DESC
 LIMIT 3;
 ```
 #### Answer: 
-![alt text](<Screenshot 2025-01-27 at 18.07.47.png>)
+![alt text](<Question5.png>)
 
 ## Question 6
 ```bash
