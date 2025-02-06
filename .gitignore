@@ -43,3 +43,9 @@ override.tf.json
 terraform.rc
 
 *.json
+
+# Ignore environment files
+.env_encoded
+.env
+.env.local
+credentials.json
