@@ -49,3 +49,6 @@ terraform.rc
 .env
 .env.local
 credentials.json
+
+# Ignore parquet
+*.parquet
