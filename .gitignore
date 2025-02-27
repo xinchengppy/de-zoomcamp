@@ -1,7 +1,6 @@
 .DS_Store
 venv/
 __pycache__/
-*.csv
 *.csv.gz
 
 # Local .terraform directories
