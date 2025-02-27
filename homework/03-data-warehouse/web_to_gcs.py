@@ -10,7 +10,7 @@ Pre-reqs:
 2. Set GOOGLE_APPLICATION_CREDENTIALS to your project/service-account key
 3. Set GCP_GCS_BUCKET as your bucket or change default value of BUCKET
 """
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/xcluo/de-zoomcamp/homework/03-data-warehouse/service-account.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/workspaces/de-zoomcamp/homework/03-data-warehouse/service-account.json"
 
 # services = ['fhv','green','yellow']
 init_url = 'https://github.com/DataTalksClub/nyc-tlc-data/releases/download/'
@@ -51,10 +51,10 @@ def web_to_gcs(year, service):
         print(f"Local: {file_name}")
 
         # read it back into a parquet file
-        df = pd.read_csv(file_name, compression='gzip')
-        file_name = file_name.replace('.csv.gz', '.parquet')
-        df.to_parquet(file_name, engine='pyarrow')
-        print(f"Parquet: {file_name}")
+        # df = pd.read_csv(file_name, compression='gzip')
+        # file_name = file_name.replace('.csv.gz', '.parquet')
+        # df.to_parquet(file_name, engine='pyarrow')
+        # print(f"Parquet: {file_name}")
 
         # upload it to gcs 
         upload_to_gcs(BUCKET, f"{service}/{file_name}", file_name)
