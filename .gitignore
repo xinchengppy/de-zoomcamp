@@ -2,6 +2,7 @@
 venv/
 __pycache__/
 *.csv.gz
+*.csv
 
 # Local .terraform directories
 **/.terraform/*
@@ -51,3 +52,10 @@ credentials.json
 
 # Ignore parquet
 *.parquet
+*.parquet.crc
+
+
+*.crc
+_SUCCESS
+
+*.ipynb_checkpoints
